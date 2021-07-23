@@ -3022,6 +3022,46 @@
         </RangeOptionsContainer>
         <DMSPickedParamAndDataSetCollection />
       </RuleRowInternal>
+      <RuleSearchReplace>
+        <DMSRule>
+          <RuleBlock Value="01" />
+          <RuleNumber Value="0008" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="True" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <TargetTableName Value="ERP_Customers" />
+        <TargetColumnName Value="Notes" />
+        <UseDefaultCommitFrequency Value="True" />
+        <WhereClauseAndSamplingContainer>
+          <WhereClause Value="where ..." />
+          <WhereClauseMode Value="Where_NotNullOrEmpty" />
+          <WantSamplePercent Value="False" />
+          <SamplePercentage Value="100.00" />
+          <WantRowLimit Value="False" />
+          <RowLimit Value="1000" />
+          <WantDistinctSet Value="False" />
+          <ForceInLineNullSkips Value="False" />
+        </WhereClauseAndSamplingContainer>
+        <DMSSeaRepOperationCollection>
+          <DMSSeaRepOperation_RndOut>
+            <SeaRepOperationBase>
+              <IsEnabled Value="True" />
+            </SeaRepOperationBase>
+            <SelectAlpha Value="True" />
+            <SelectNumeric Value="True" />
+          </DMSSeaRepOperation_RndOut>
+        </DMSSeaRepOperationCollection>
+      </RuleSearchReplace>
     </DMSRuleBindingList>
   </DMSSetContainer>
 </DMSSetContainer_MaskingSet>
