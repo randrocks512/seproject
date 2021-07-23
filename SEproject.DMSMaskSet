@@ -2853,6 +2853,175 @@
           </N2KSQLServerEntity_PickedColumnPair>
         </SyncColumnCollection>
       </RuleTableToTable>
+      <RuleRowInternal>
+        <DMSRule>
+          <RuleBlock Value="01" />
+          <RuleNumber Value="0005" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="True" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0004" />
+          <Description Value="" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <TargetTableName Value="ERP_Customers" />
+        <TargetColumnName Value="AliasName" />
+        <ReplacementClause Value="Name" />
+        <UseFastSinglePass Value="False" />
+        <UseDefaultCommitFrequency Value="True" />
+        <WhereClauseAndSamplingContainer>
+          <WhereClause Value="UPDATE mytable&#xD;&#xA;SET textfield = LEFT(textfield+' ', CHARINDEX(' ', textfield) - 1)&#xD;&#xA;WHERE CHARINDEX(' ', textfield) &gt; 0" />
+          <WhereClauseMode Value="Custom_WhereClause" />
+          <WantSamplePercent Value="False" />
+          <SamplePercentage Value="100.00" />
+          <WantRowLimit Value="False" />
+          <RowLimit Value="1000" />
+          <WantDistinctSet Value="False" />
+          <ForceInLineNullSkips Value="False" />
+        </WhereClauseAndSamplingContainer>
+        <RangeOptionsContainer>
+          <RangeClause Value="" />
+          <RangeLow Value="" />
+          <RangeHigh Value="" />
+        </RangeOptionsContainer>
+        <DMSPickedParamAndDataSetCollection />
+      </RuleRowInternal>
+      <RuleSubstitution>
+        <DMSRule>
+          <RuleBlock Value="01" />
+          <RuleNumber Value="0006" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <TargetTableName Value="ERP_Customers" />
+        <UseDefaultCommitFrequency Value="True" />
+        <WhereClauseAndSamplingContainer>
+          <WhereClause Value="where ..." />
+          <WhereClauseMode Value="Where_NotNullOrEmpty" />
+          <WantSamplePercent Value="False" />
+          <SamplePercentage Value="100.00" />
+          <WantRowLimit Value="False" />
+          <RowLimit Value="1000" />
+          <WantDistinctSet Value="False" />
+          <ForceInLineNullSkips Value="False" />
+        </WhereClauseAndSamplingContainer>
+        <RangeOptionsContainer>
+          <RangeClause Value="" />
+          <RangeLow Value="" />
+          <RangeHigh Value="" />
+        </RangeOptionsContainer>
+        <DMSPickedColumnAndDataSetCollection>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="USperson" />
+              <ColumnFullDataType Value="varchar(250)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="48" />
+              <DataType Value="varchar" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_NAMFLX>
+              <UpperCaseText Value="False" />
+              <UniqueValuesOnly Value="False" />
+            </DataSet_NAMFLX>
+          </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="SpecifiedUKPerson" />
+              <ColumnFullDataType Value="nvarchar(50)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="59" />
+              <DataType Value="nvarchar" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_NAMFLX>
+              <UpperCaseText Value="False" />
+              <UniqueValuesOnly Value="False" />
+            </DataSet_NAMFLX>
+          </DMSPickedColumnAndDataSet>
+          <DMSPickedColumnAndDataSet>
+            <N2KSQLServerEntity_PickedColumn>
+              <N2KSQLServerEntity />
+              <ColumnName Value="ReportingName" />
+              <ColumnFullDataType Value="nvarchar(75)" />
+              <ColumnConversionWrapper Value="" />
+              <ColumnConversionEnabled Value="False" />
+              <OrdinalPosition Value="62" />
+              <DataType Value="nvarchar" />
+              <IsPseudoColumn Value="False" />
+              <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+            </N2KSQLServerEntity_PickedColumn>
+            <DataSet_NMLFMF>
+              <UpperCaseText Value="False" />
+              <UniqueValuesOnly Value="False" />
+              <InsertComma Value="True" />
+              <WantUserDefinedDelimiter Value="False" />
+              <UserDefinedDelimiter Value=": " />
+            </DataSet_NMLFMF>
+          </DMSPickedColumnAndDataSet>
+        </DMSPickedColumnAndDataSetCollection>
+      </RuleSubstitution>
+      <RuleRowInternal>
+        <DMSRule>
+          <RuleBlock Value="01" />
+          <RuleNumber Value="0007" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0006" />
+          <Description Value="" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <TargetTableName Value="ERP_Customers" />
+        <TargetColumnName Value="SpecifiedUSPerson" />
+        <ReplacementClause Value="USperson" />
+        <UseFastSinglePass Value="False" />
+        <UseDefaultCommitFrequency Value="True" />
+        <WhereClauseAndSamplingContainer>
+          <WhereClause Value="where ..." />
+          <WhereClauseMode Value="Where_NotNullOrEmpty" />
+          <WantSamplePercent Value="False" />
+          <SamplePercentage Value="100.00" />
+          <WantRowLimit Value="False" />
+          <RowLimit Value="1000" />
+          <WantDistinctSet Value="False" />
+          <ForceInLineNullSkips Value="False" />
+        </WhereClauseAndSamplingContainer>
+        <RangeOptionsContainer>
+          <RangeClause Value="" />
+          <RangeLow Value="" />
+          <RangeHigh Value="" />
+        </RangeOptionsContainer>
+        <DMSPickedParamAndDataSetCollection />
+      </RuleRowInternal>
     </DMSRuleBindingList>
   </DMSSetContainer>
 </DMSSetContainer_MaskingSet>
